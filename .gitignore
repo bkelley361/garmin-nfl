@@ -1,0 +1,19 @@
+# Garmin Connect IQ build outputs & developer keys
+bin/
+*.prg
+*.prg.debug.xml
+*.iq
+*.der
+
+# Node / Cloudflare Wrangler
+node_modules/
+.wrangler/
+.dev.vars
+.env
+.env.*
+
+# Local VS Code settings (machine-specific SDK & key paths)
+**/.vscode/settings.json
+
+# macOS
+.DS_Store

@@ -1,0 +1,65 @@
+﻿2023-03-06: v2.0.0
+==================
+ - improved memory usage
+
+
+2022-09-02: v1.3.4
+==================
+ - better support for Venu Sq 2 screen size
+
+
+2022-02-20: v1.3.2
+==================
+ - added support for Instinct 2 screen
+
+
+2020-08-31: v1.3.1
+==================
+ - Removed all device specific strings and use partnumber instead. This saves a little bit of memory.
+ - Fixed error in German translation
+
+
+2020-08-09: v1.3.0
+==================
+When a connection loss is detected, an error message will be displayed telling the customer to restart the watch in case he already paid or unlocked. 
+This message will be alternated every 10 seconds with the standard payment message until the connection is restored.
+ 
+
+2020-08-08: v1.2.0
+==================
+ - Use KiezelPay API v2 with 6-digit purchase codes
+ - Improved handling of failing connections
+
+
+2020-07-26: v1.1.0
+==================
+ - Added translations for Dutch, German, French and Spanish
+ 
+
+2020-06-20: v1.0.1
+==================
+ - Added support for several older devices; minimum supported SDK version is now 1.4
+	 ==> the following devices were added:
+			- D2 Bravo (218 x 218 round)
+			- D2 Bravo Titanium (218 x 218 round)
+			- Edge 130 (230 x 303 rectangle)
+			- Epix (205 x 148 rectangle)
+			- fēnix 3 / tactix Bravo / quatix 3 (218 x 218 round)
+			- fēnix 3 HR (218 x 218 round)
+			- Forerunner 230 (215 x 180 semi-round)
+			- Forerunner 235 (215 x 180 semi-round)
+			- Forerunner 45 (208 x 208 round)
+			- Forerunner 630 (215 x 180 semi-round)
+			- Forerunner 920XT (205 x 148 rectangle)
+			- Garmin Swim (55 x 31 semi-round)
+			- Garmin Swim 2 (208 x 208 round
+ - Better error handling in the background thread to prevent crashes
+ - Better support for square screens; these also show a progress bar now while waiting for the purchase to succeed
+ - Extra check so the payment dialog is only displayed when a working Bluetooth connection is detected
+
+
+2020-06-06: v1.0.0
+==================
+ - Trial time is now retrieved from the KiezelPay server and no longer hardcoded (BREAKING CHANGE IN KPAY_CONFIG FORMAT!)
+ - Better error handling in case the API request to KiezelPay fails
+ - Started with barrel versioning (current version is 1.0.0)
